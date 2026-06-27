@@ -1,1 +1,242 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#3B82F6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#3B82F6;
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 10% 50px;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text p:first-child{
+
+    color:#60A5FA;
+
+    font-size:20px;
+
+}
+
+.hero-text h1{
+
+    font-size:60px;
+
+    margin:15px 0;
+
+}
+
+.hero-text h2{
+
+    color:#94A3B8;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.tagline{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    text-decoration:none;
+
+    padding:15px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:#3B82F6;
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid #3B82F6;
+
+    color:#3B82F6;
+
+}
+
+.btn-secondary:hover{
+
+    background:#3B82F6;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+/* Profile Image */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #3B82F6;
+
+    box-shadow:0 0 35px rgba(59,130,246,.35);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-text h1{
+
+font-size:45px;
+
+}
+
+nav{
+
+padding:20px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+}
